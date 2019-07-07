@@ -3,7 +3,6 @@ Text Juicer for Text Mesh PRO
 Is a plugin to allow you do "per-character-animation" on text fields, like this one:
 
 ![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-1.gif?raw=true)
-![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-1.gif?raw=true)
 
 ![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-2.gif?raw=true)
 
