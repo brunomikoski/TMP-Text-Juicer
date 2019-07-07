@@ -7,7 +7,7 @@ Is a plugin to allow you do "per-character-animation" on text fields, like this 
 ![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-2.gif?raw=true)
 
 ###### Component Work flow
-![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/text-juicer-component?raw=true)
+![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/text-juicer-component.gif?raw=true)
 
 ###### Controlling the animation
 This git is a ready to be used as sub-module, so just add to your project anywhere inside the Assets Folder, something like Assets/Text Juicer/
