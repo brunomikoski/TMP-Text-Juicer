@@ -1,0 +1,14 @@
+{
+    "name": "TMPTextJuicerEditor",
+    "references": [
+        "TMPTextJuicer"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
