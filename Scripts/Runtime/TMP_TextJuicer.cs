@@ -48,10 +48,10 @@ namespace BrunoMikoski.TextJuicer
         }
 
         [SerializeField]
-        private float duration = 1.0f;
+        private float duration = 0.1f;
 
         [SerializeField]
-        private float delay = 0.01f;
+        private float delay = 0.05f;
 
         [SerializeField]
         [Range( 0.0f, 1.0f )]
@@ -178,6 +178,7 @@ namespace BrunoMikoski.TextJuicer
             internalTime = progress * realTotalAnimationTime;
             UpdateTime();
             ApplyModifiers();
+            tmpText.havePropertiesChanged = true;
         }
 
         public void SetPlayForever( bool shouldPlayForever )
@@ -195,6 +196,9 @@ namespace BrunoMikoski.TextJuicer
         #region Internal
         private void AfterIsReady()
         {
+            if (!Application.isPlaying)
+                return;
+
             if ( playWhenReady )
                 Play();
             else
@@ -222,6 +226,8 @@ namespace BrunoMikoski.TextJuicer
         {
             if (charactersData == null)
                 return;
+
+            tmpText.ForceMeshUpdate(true);
             for ( int i = 0; i < charactersData.Length; i++ )
                 ModifyCharacter( i, cachedMeshInfo );
 
