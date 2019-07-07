@@ -32,6 +32,9 @@ namespace BrunoMikoski.TextJuicer.Modifiers
             float progress,
             TMP_MeshInfo[] meshInfo)
         {
+            if (gradient == null)
+                return;
+
             int materialIndex = characterData.MaterialIndex;
 
             newVertexColors = textInfo.meshInfo[materialIndex].colors32;
