@@ -1,11 +1,14 @@
 # TMP-Text-Juicer
 Text Juicer for Text Mesh PRO
 Is a plugin to allow you do "per-character-animation" on text fields, like this one:
-![](https://thumbs.gfycat.com/UntimelyDazzlingBrahmancow-size_restricted.gif)
 
-![alt tag](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-1.gif?raw=true)
+![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-1.gif?raw=true)
+![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-1.gif?raw=true)
 
-![alt tag](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-2.gif?raw=true)
+![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/example-2.gif?raw=true)
+
+###### Component Work flow
+![](https://github.com/badawe/TMP-Text-Juicer/blob/develop/Readme-Assets/text-juicer-component?raw=true)
 
 ###### Controlling the animation
 This git is a ready to be used as sub-module, so just add to your project anywhere inside the Assets Folder, something like Assets/Text Juicer/
@@ -16,7 +19,7 @@ If you don't know how to add as a sub-module you can check this [guide](https://
 Basically you can access and change the progress of the animation by the animator itself, or using the helpers inside the TextAnimation, by simply caling, `Play()`, `Stop()` and `Restart()`
 
 ###### Adding new effects
-Is quite simple, you just need to extend the BaseVertexModifier, and you have access to change whatever you want, in the example bellow, is using a curve to simple multiply the Y from the position itself, generating this effect
+Is quite simple, you just need to extend the TextJuicerVertexModifier
 
 ```csharp
 [RequireComponent(typeof(TMP_TextJuicer))]
@@ -50,9 +53,6 @@ Is quite simple, you just need to extend the BaseVertexModifier, and you have ac
 
 
 ###### Multiple Effects
-You can add multiple effects at same time, like the PerCharacter and the X Modifier
-![](https://thumbs.gfycat.com/BestGrayCusimanse-size_restricted.gif)
-
 Current Effects:
 - Transform Modifier (Position / Scale / Rotation)
 - Color Modifier
