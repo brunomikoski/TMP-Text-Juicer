@@ -1,4 +1,6 @@
 # TMP-Text-Juicer
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/badawe/TMP-Text-Juicer/blob/develop/LICENSE)
+
 Text Juicer for Text Mesh PRO
 Is a plugin to allow you do "per-character-animation" on text fields, like this one:
 
