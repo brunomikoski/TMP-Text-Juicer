@@ -329,8 +329,7 @@ namespace BrunoMikoski.TextJuicer
                 int indexCount = 0;
                 for ( int i = 0; i < textInfo.characterCount; i++ )
                 {
-                    char targetCharacter = textInfo.characterInfo[i].character;
-                    if ( targetCharacter == ' ' )
+                    if (!textInfo.characterInfo[i].isVisible)
                         continue;
 
                     CharacterData characterData = new CharacterData( indexCount,
