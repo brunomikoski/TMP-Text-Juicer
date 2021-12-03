@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace BrunoMikoski.TextJuicer.Modifiers
 {
-    [AddComponentMenu( "UI/Text Juicer Modifiers/Gradiend Modifier", 11 )]
+    [AddComponentMenu( "UI/Text Juicer Modifiers/Gradient Modifier", 11 )]
     public sealed class TextJuicerGradientModifier : TextJuicerVertexModifier
     {
         [SerializeField]
